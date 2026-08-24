@@ -1,0 +1,9 @@
+notification:
+  name: gox-sbx-console-notification
+  text: "GOX Sandbox"
+  location: BannerTop
+  color: "#FFFFFF"
+  backgroundColor: "#0066CC"
+  link:
+    href: ""
+    text: ""

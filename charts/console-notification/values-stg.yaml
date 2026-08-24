@@ -1,0 +1,9 @@
+notification:
+  name: gox-stg-console-notification
+  text: "GOX Staging"
+  location: BannerTop
+  color: "#000000"
+  backgroundColor: "#F1C21B"
+  link:
+    href: ""
+    text: ""

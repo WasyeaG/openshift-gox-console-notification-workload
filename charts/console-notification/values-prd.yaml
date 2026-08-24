@@ -1,0 +1,9 @@
+notification:
+  name: gox-prd-console-notification
+  text: "GOX Production"
+  location: BannerTop
+  color: "#FFFFFF"
+  backgroundColor: "#DA1E28"
+  link:
+    href: ""
+    text: ""

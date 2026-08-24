@@ -1,0 +1,17 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleNotification
+metadata:
+  name: {{ .Values.notification.name | quote }}
+
+spec:
+  text: {{ .Values.notification.text | quote }}
+  location: {{ .Values.notification.location }}
+
+  color: {{ .Values.notification.color | quote }}
+  backgroundColor: {{ .Values.notification.backgroundColor | quote }}
+
+  {{- if and .Values.notification.link.href .Values.notification.link.text }}
+  link:
+    href: {{ .Values.notification.link.href | quote }}
+    text: {{ .Values.notification.link.text | quote }}
+  {{- end }}

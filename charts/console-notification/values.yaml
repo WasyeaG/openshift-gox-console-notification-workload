@@ -1,0 +1,9 @@
+notification:
+  name: gox-console-notification
+  text: "GOX environment"
+  location: BannerTop
+  color: "#FFFFFF"
+  backgroundColor: "#0066CC"
+  link:
+    href: ""
+    text: ""
