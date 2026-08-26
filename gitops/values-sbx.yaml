@@ -1,0 +1,25 @@
+application:
+  name: console-notification
+
+applicationset:
+  name: gox-sbx-console-notification
+  namespace: openshift-gitops
+
+source:
+  repoURL: https://github.com/WasyeaG/openshift-gox-console-notification-workload.git
+  path: charts/console-notification
+  targetRevision: main
+
+destination:
+  namespace: openshift-console
+
+clusterSelector:
+  key: gox.li9.com/environment
+  value: sbx
+
+environment: sbx
+
+helm:
+  releaseName: console-notification
+  valueFiles:
+    - values-sbx.yaml
