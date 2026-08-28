@@ -1,0 +1,14 @@
+applicationset:
+  name: gox-prd-console-notification
+
+source:
+  targetRevision: main
+
+clusterSelector:
+  value: prd
+
+environment: prd
+
+helm:
+  valueFiles:
+    - values-prd.yaml

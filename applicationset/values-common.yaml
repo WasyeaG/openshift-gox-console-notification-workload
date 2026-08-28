@@ -1,0 +1,18 @@
+application:
+  name: console-notification
+
+applicationset:
+  namespace: openshift-gitops
+
+source:
+  repoURL: https://github.com/WasyeaG/openshift-gox-console-notification-workload.git
+  path: charts/console-notification
+
+destination:
+  namespace: openshift-console
+
+clusterSelector:
+  key: gox.li9.com/environment
+
+helm:
+  releaseName: console-notification

@@ -1,0 +1,14 @@
+applicationset:
+  name: gox-sbx-console-notification
+
+source:
+  targetRevision: sbx
+
+clusterSelector:
+  value: sbx
+
+environment: sbx
+
+helm:
+  valueFiles:
+    - values-sbx.yaml
